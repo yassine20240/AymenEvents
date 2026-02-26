@@ -208,4 +208,27 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+
+
+
+
+  const images = [
+    "assets/img/hero1.jpeg",
+    "assets/img/hero2.jpeg",
+    "assets/img/hero3.jpeg",
+  ];
+
+  let index = 0;
+  const heroImage = document.getElementById("heroImage");
+
+  setInterval(() => {
+    index++;
+    if (index >= images.length) {
+      index = 0;
+    }
+    heroImage.src = images[index];
+  }, 2000);
+
+
 })();
