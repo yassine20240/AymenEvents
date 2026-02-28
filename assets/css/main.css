@@ -1746,3 +1746,10 @@ section,
   background-color: #20b95a;  
   transform: translateY(-2px);
 }
+
+
+.flex_icon{
+  display:flex; 
+  margin-top:2rem ; 
+  
+}
