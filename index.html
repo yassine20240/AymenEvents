@@ -217,14 +217,14 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide1"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide1"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide1"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide1"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide1"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide1"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide1"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide1"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -364,11 +364,11 @@
 <div class="swiper-wrapper">
 
 <!-- ================= TEAMBULDING ================= -->
-<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding2.jpeg"></div>
-<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding3.jpeg"></div>
-<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding4.jpeg"></div>
-<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding5.jpeg"></div>
-<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding8.jpeg"></div>
+<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding2.jpeg"></div>
+<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding3.jpeg"></div>
+<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding4.jpeg"></div>
+<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding5.jpeg"></div>
+<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding8.jpeg"></div>
 
 <!-- ================= PUBLICITE ================= -->
 <div class="swiper-slide publicite"><img src="assets/img/products/publicite1.jpeg"></div>
@@ -452,19 +452,27 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
+ <script>
   const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
+
+    autoplay: {
+      delay: 2000, // كل 2 ثواني
+      disableOnInteraction: false
+    },
+
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
     breakpoints: {
       0: { slidesPerView: 1 },
       768: { slidesPerView: 2 },
@@ -487,15 +495,13 @@
         if (filter === "all") {
           slide.style.display = "block";
         } else {
-          if (slide.classList.contains(filter)) {
-            slide.style.display = "block";
-          } else {
-            slide.style.display = "none";
-          }
+          slide.style.display = 
+            slide.classList.contains(filter) ? "block" : "none";
         }
       });
 
       swiper.update();
+      swiper.autoplay.start(); // يعاود يبدا autoplay بعد الفيلتر
     });
   });
 </script>
