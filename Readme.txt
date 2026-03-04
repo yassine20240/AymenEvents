@@ -1,4 +1,4 @@
-    <!-- Clients Section -->
+ <!-- Clients Section -->
     <section id="clients" class="clients section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -37,7 +37,7 @@
               }
             }
           </script>
-          <div class="swiper-wrapper1 align-items-center">
+          <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide1"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide1"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide1"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
@@ -53,3 +53,5 @@
       </div>
 
     </section><!-- /Clients Section -->
+
+  

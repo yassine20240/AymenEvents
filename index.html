@@ -179,8 +179,7 @@
 </section><!-- /About Section -->
 
 
- 
-  
+     
     
 
 
@@ -276,7 +275,8 @@
 
   </div>
 
-</section><!-- /Services Section -->
+</section>
+<!-- /Services Section -->
 
 
 
@@ -289,7 +289,7 @@
 
   
 
- <section id="portfolio">
+  <section id="portfolio">
 
 <div class="section-title">
   <h2>Nos Réalisations</h2>
@@ -297,28 +297,35 @@
 </div>
 
 <div class="filters">
-  <button class=" filter-active active" data-filter="all">Tous</button>
-   <button data-filter="Les_jeux_gonflable_pour_enfants">Les jeux gonflable pour enfants</button>
+  <button class="filter-active active" data-filter="all">Tous</button>
+  <button data-filter="Les_jeux_gonflable_pour_enfants">Les jeux gonflable pour enfants</button>
   <button data-filter="Teambuilding">Les jeux gonflable pour Team building</button>
   <button data-filter="publicite">Les gonflable publicité</button>
   <button data-filter="sky_dancer">Sky Dancer</button>
-  <button data-filter="Arche_gonflable">Arche Gonflable </button>
+  <button data-filter="Arche_gonflable">Arche Gonflable</button>  <br>
   <button data-filter="gonflable_aquatique">Les jeux gonflable aquatique</button>
   <button data-filter="Jeuxdeparc">Jeux de Parc</button>
- 
 </div>
 
- 
+<!-- ✅ فقرة الوصف الخاصة بكل فئة -->
+<div id="categoryDescription" style="text-align:center; margin:25px 0; display:none;">
+  <p style="font-size:18px; max-width:900px; margin:auto;"></p>
+</div>
+
 <div class="swiper mySwiper">
 <div class="swiper-wrapper">
 
 <!-- ================= TEAMBULDING ================= -->
-<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding2.jpeg"></div>
-<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding3.jpeg"></div>
-<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding4.jpeg"></div>
-<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding5.jpeg"></div>
-<div class="swiper-slide  Teambuilding"><img src="assets/img/products/Teambuilding8.jpeg"></div>
-
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding1.jpeg"></div>
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding2.jpeg"></div>
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding3.jpeg"></div>
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding4.jpeg"></div>
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding5.jpeg"></div>
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding6.jpeg"></div>
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding7.jpeg"></div>
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding8.jpeg"></div>
+<div class="swiper-slide Teambuilding"><img src="assets/img/products/Teambuilding9.jpeg"></div>
+ 
 <!-- ================= PUBLICITE ================= -->
 <div class="swiper-slide publicite"><img src="assets/img/products/publicite1.jpeg"></div>
 <div class="swiper-slide publicite"><img src="assets/img/products/publicite2.jpeg"></div>
@@ -337,8 +344,7 @@
 <div class="swiper-slide publicite"><img src="assets/img/products/publicite16.jpeg"></div>
 <div class="swiper-slide publicite"><img src="assets/img/products/publicite17.jpeg"></div>
 
-<!-- ================= SKY DANCER ================= -->
- 
+<!-- ================= ARCHE ================= -->
 <div class="swiper-slide Arche_gonflable"><img src="assets/img/products/Arche_gonflable1.jpeg"></div>
 <div class="swiper-slide Arche_gonflable"><img src="assets/img/products/Arche_gonflable2.jpeg"></div>
 <div class="swiper-slide Arche_gonflable"><img src="assets/img/products/Arche_gonflable3.jpeg"></div>
@@ -351,9 +357,8 @@
 <div class="swiper-slide Arche_gonflable"><img src="assets/img/products/Arche_gonflable10.jpeg"></div>
 <div class="swiper-slide Arche_gonflable"><img src="assets/img/products/Arche_gonflable11.jpeg"></div>
 <div class="swiper-slide Arche_gonflable"><img src="assets/img/products/Arche_gonflable12.jpeg"></div>
- 
 
-<!-- ================= ARCHE ================= -->
+<!-- ================= SKY DANCER ================= -->
 <div class="swiper-slide sky_dancer"><img src="assets/img/products/skydancer1.jpeg"></div>
 <div class="swiper-slide sky_dancer"><img src="assets/img/products/skydancer2.jpeg"></div>
 <div class="swiper-slide sky_dancer"><img src="assets/img/products/skydancer3.jpeg"></div>
@@ -367,7 +372,6 @@
 <div class="swiper-slide gonflable_aquatique"><img src="assets/img/products/gonflable aquatique6.jpeg"></div>
 <div class="swiper-slide gonflable_aquatique"><img src="assets/img/products/gonflable aquatique7.jpeg"></div>
 <div class="swiper-slide gonflable_aquatique"><img src="assets/img/products/gonflable aquatique8.jpeg"></div>
-<!-- <div class="swiper-slide gonflable_aquatique"><img src="assets/img/products/gonflable aquatique9.jpeg"></div> -->
 
 <!-- ================= JEUX DE PARC ================= -->
 <div class="swiper-slide Jeuxdeparc"><img src="assets/img/products/Jeuxdeparc1.jpeg"></div>
@@ -391,99 +395,146 @@
 <div class="swiper-slide Jeuxdeparc"><img src="assets/img/products/Jeuxdeparc20.jpeg"></div>
 <div class="swiper-slide Jeuxdeparc"><img src="assets/img/products/Jeuxdeparc21.jpeg"></div>
 
-<!-- ================= Les_jeux_gonflable_pour_enfants ================= -->
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants1.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants2.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants3.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants4.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants5.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants6.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants7.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants8.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants9.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants10.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants11.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants12.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants13.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants14.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants15.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants16.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants17.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants18.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants19.jpeg"></div>
-<div class="swiper-slide         Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants20.jpeg"></div>
-
-
-
-
-
-
-
+<!-- ================= ENFANTS ================= -->
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants1.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants2.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants3.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants4.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants5.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants6.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants7.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants8.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants9.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants10.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants11.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants12.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants13.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants14.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants15.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants16.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants17.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants18.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants19.jpeg"></div>
+<div class="swiper-slide Les_jeux_gonflable_pour_enfants"><img src="assets/img/products/Les_jeux_gonflable_pour_enfants20.jpeg"></div>
 
 </div>
 
 <div class="swiper-button-next"></div>
 <div class="swiper-button-prev"></div>
-<!-- <div class="swiper-pagination"></div> -->
-
 </div>
 </section>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"  ></script>
+<script>
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: false,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
+});
 
- <script>
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
+const descriptions = {
+ 
+"publicite": `
+📢 Les structures gonflables publicitaires (tentes, colonnes, arches) offrent une visibilité puissante et professionnelle.<br>
+🎨 Personnalisez-les avec votre logo, vos couleurs et vos partenaires pour renforcer votre image de marque.<br>
+🏬 Idéales pour inaugurations, salons, foires, festivals, concerts et événements commerciaux.<br>
+💪 Résistantes, durables et conçues pour un usage fréquent sans détérioration.<br>
+⚡ Installation rapide en quelques minutes avec un gonfleur intégré, manipulation simple et efficace.
+`,
 
-    autoplay: {
-      delay: 2000, // كل 2 ثواني
-      disableOnInteraction: false
-    },
+"Les_jeux_gonflable_pour_enfants": `
+🎈 Bienvenue chez Gonflable Maroc, spécialiste des jeux gonflables au Maroc.<br>
+Nous proposons châteaux gonflables, toboggans, parcs aquatiques et structures ludiques pour anniversaires, écoles, centres de loisirs et fêtes privées.<br>
+✅ Produits sécurisés et de haute qualité pour garantir plaisir et divertissement aux enfants de tous âges.<br>
+🎨 Location, vente et personnalisation disponibles selon vos besoins.<br>
+🌟 Gonflable Maroc – Le plaisir des enfants, la confiance des parents !
+`,
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  "Teambuilding": `
+💪🎉 Renforcez l’esprit d’équipe avec Maroc Gonflable ! 🎉💪<br>
+Offrez à votre équipe une expérience inoubliable grâce à nos jeux gonflables géants.<br>
+🏰 Courses, défis et compétitions amicales pour créer cohésion, énergie et rires.<br>
+🎯 Jeux sécurisés et de haute qualité, installation rapide partout au Maroc.<br>
+🎨 Adaptés à tous les âges avec possibilité de personnalisation (couleurs et thème).<br>
+🔥 Faites de votre Team Building un événement dynamique et mémorable !<br>
+📲 Contactez-nous dès aujourd’hui pour réserver.
+`,
+  
+ "sky_dancer": `
+🌟 Attirez tous les regards avec Maroc Gonflable !<br>
+💨 Le Skydancer personnalisable est la solution idéale pour dynamiser votre commerce ou événement et capter immédiatement l’attention.<br>
+🎨 100% personnalisable : couleurs, logo et design adaptés à votre image.<br>
+💪 Qualité premium : toile nylon résistante et moteur puissant pour une visibilité maximale.<br>
+✨ Idéal pour magasins, événements, salons et promotions.<br>
+📦 Disponible en plusieurs tailles – livraison au Maroc et à l’international.<br>
+📲 Contactez-nous pour votre devis personnalisé !
+`,
+ 
+ 
+ "Arche_gonflable": `
+🏁 L’arche gonflable est idéale pour marathons, courses et événements sportifs.<br>
+Placée au départ ou à l’arrivée, elle garantit une visibilité maximale et un impact visuel fort.<br>
+🎨 Entièrement personnalisable avec votre logo, vos sponsors et vos couleurs.<br>
+💪 Robuste, durable et conçue pour être installée et démontée facilement à chaque événement.<br>
+⚡ Montage rapide grâce à un système de gonflage performant en quelques minutes seulement.
+`,
 
-    breakpoints: {
-      0: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-    }
-  });
 
-  const buttons = document.querySelectorAll(".filters button");
-  const slides = document.querySelectorAll(".swiper-slide");
+  "gonflable_aquatique": "Description spéciale pour les jeux gonflables aquatiques.",
+  "Jeuxdeparc": "Description spéciale pour les jeux de parc."
+};
 
-  buttons.forEach(btn => {
-    btn.addEventListener("click", function () {
+const buttons = document.querySelectorAll(".filters button");
+const slides = document.querySelectorAll(".swiper-slide");
+const descriptionBox = document.getElementById("categoryDescription");
+const descriptionText = descriptionBox.querySelector("p");
 
-      buttons.forEach(b => b.classList.remove("active"));
-      this.classList.add("active");
+buttons.forEach(btn => {
+  btn.addEventListener("click", function () {
 
-      const filter = this.getAttribute("data-filter");
+    buttons.forEach(b => b.classList.remove("active"));
+    this.classList.add("active");
 
-      slides.forEach(slide => {
-        if (filter === "all") {
-          slide.style.display = "block";
-        } else {
-          slide.style.display = 
-            slide.classList.contains(filter) ? "block" : "none";
-        }
-      });
+    const filter = this.getAttribute("data-filter");
 
-      swiper.update();
-      swiper.autoplay.start(); // يعاود يبدا autoplay بعد الفيلتر
+    slides.forEach(slide => {
+      if (filter === "all") {
+        slide.style.display = "block";
+      } else {
+        slide.style.display =
+          slide.classList.contains(filter) ? "block" : "none";
+      }
     });
+
+    if (filter === "all") {
+      descriptionBox.style.display = "none";
+    } else {
+      descriptionBox.style.display = "block";
+      descriptionText.innerHTML = descriptions[filter];
+    }
+
+    swiper.update();
+    swiper.slideTo(0);
   });
+});
 </script>
+ 
+ 
+ 
 
 
 
